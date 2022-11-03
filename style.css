@@ -1,0 +1,268 @@
+/* formato css padrão para zerar configurações inicias da pagina */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body, input, select, textarea {
+
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    
+    background: #e5e5e5;
+}
+
+body::before {
+    content: '';
+    width: 100%;
+    height: 368px;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #535971;
+    
+}
+
+.page {
+    width: 736px;
+    margin: auto;
+}
+
+header {
+    width: 319px;
+    margin-top: 74px;
+}
+
+
+header h1 {
+    font-family: 'Staatliches', 'sans-serif';
+    height: 60px;
+    
+    font-size: 48px;
+    line-height: 60px;
+    color: #FFFFFF;
+
+    margin-bottom: 24px;
+}
+
+header p {
+    font-size: 20px;
+    line-height: 30px;
+
+    color: #FFFFFF;
+
+}
+
+form  {
+    width: 750px;
+    background-color: #FFFFFF;
+
+    border-radius: 20px 20px 0 0;
+    margin-top: 38px;
+    min-height: 300px;
+
+    padding: 64px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+fieldset {
+    border: none;
+
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+fieldset legend {
+    color: #535971;
+    font-family: 'Staatliches', 'sans-serif';
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+
+    width: 100%;
+
+    border-bottom: 1px solid #e6e6f0;
+    padding-bottom: 16px;
+
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-wrapper label {
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+.input-wrapper2 {
+    display: flex;
+    flex-direction: column;
+
+    gap: 24px;
+    color: #535971;
+    font-family: 'Staatliches', 'sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    width: 100%;
+
+}
+
+.col-2 {
+    display: flex;
+
+    gap: 22px;
+}
+
+.input-wrapper-1 {
+    display: flex;
+    flex-direction: column;
+    font-family: 'Staatliches', 'sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 34px;
+
+    color: #535971;
+    margin-bottom: 8px;
+}
+
+.input-wrapper label span {
+    margin-left: 12px;
+
+    font-size: 12px;
+    line-height: 20px;
+    color: #c1bccc;
+}
+
+.input-wrapper-1 label {
+    display: flex;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+
+    color: #4E4958;
+    margin-bottom: 8px;
+}
+
+.input-wrapper-1 input {
+    display: flex;
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    width: 300px;
+    height: 56px;
+    
+ /* formatando texto interno */
+    padding: 0 24px; 
+
+    font-size: 16px;
+    list-style: 26px;
+
+    color: #c1bccc;
+}
+
+.input-wrapper label span:hover {
+    color: #78777a;
+
+}
+
+.input-wrapper input, .input-wrapper textarea,
+.input-wrapper select {
+    background: #FAFAFC;
+
+    border: 1px solid #E6E6F0;
+    border-radius: 8px;
+
+    height: 56px;
+    
+ /* formatando texto interno */
+    padding: 0 24px; 
+
+    font-size: 16px;
+    list-style: 26px;
+
+    color: #c1bccc;
+}
+
+.input-wrapper textarea {
+    padding: 0;
+    height: 168px;
+}
+
+.col-3 {
+    display: flex;
+    gap: 20px;
+}
+
+ /*selecionando a primeira div (data) e espaçando */
+.col-3 > div:nth-child(1) {
+    width: 100%;
+}
+
+/*  personalizando focus ao selecionar os input */
+.input-wrapper input:focus, textarea:focus, select:focus {
+    outline: 2px solid #4e4958;
+}
+
+#event-list-2 {
+    display: flex;
+    width: 140px;
+
+}
+
+/*  estilizando footer */
+footer {
+    background: #535971;
+    width: 750px;
+    height: 160px;
+    border-radius: 0 0 20px 20px;
+    border-top: 1px solid #d6d6d6;
+
+    display: flex;
+    flex-direction: column;
+    padding: 52px 71px;
+
+    margin-bottom: 100px;
+}
+
+footer .button {
+    height: 56px;
+    width: 608px;
+    background: #FF5374;
+    border-radius: 20px;
+    border: 0;
+
+    font-family: 'Staatliches', 'sans-serif';
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+
+    padding: 15px 40px;
+    color: #FFFFFF;
+}
+
+footer .button:hover {
+    background: #8c0721;
+}
